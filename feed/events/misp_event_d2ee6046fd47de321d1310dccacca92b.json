@@ -1,0 +1,223 @@
+{
+    "Event": {
+        "uuid": "87e11ceb-6bf7-4e8a-ab4e-9db7363112d3",
+        "info": "Malware: darkkomet (d2ee6046...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 2,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Insecure Permissions",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "insecure permissions",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "darkkomet",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2021-0182",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/d2ee6046fd47de321d1310dccacca92b.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/d2ee6046fd47de321d1310dccacca92b.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20210422003519/https://www.malvuln.com/advisory/d2ee6046fd47de321d1310dccacca92b.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "The malware creates an hidden insecure dir named \"Windupdt\" under c:\\ drive and grants change (C) permissions to the authenticated user group.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "d2ee6046fd47de321d1310dccacca92b",
+                "to_ids": true
+            },
+            {
+                "type": "filename",
+                "category": "Payload delivery",
+                "value": "winupdate.exe",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/d2ee6046fd47de321d1310dccacca92b.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "71a43edf-a4c6-4b7b-bd48-f80120982313",
+                "description": "backdoor.win32.darkkomet.artr sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "darkkomet",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "pe32",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "file",
+                "meta-category": "artifact",
+                "uuid": "cdbb4a4b-4752-48b2-86f6-1264de5a609c",
+                "Attribute": [
+                    {
+                        "type": "filename",
+                        "category": "Payload delivery",
+                        "object_relation": "filename",
+                        "value": "winupdate.exe",
+                        "to_ids": true
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "3570ad43-4ba7-42ca-a373-4dc3d9a2df1e",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/d2ee6046fd47de321d1310dccacca92b.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "b5eb67e8-b485-4bcc-916d-a710759630a3",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2021-0182"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Insecure Permissions"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Insecure Permissions in backdoor.win32.darkkomet.artr"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/d2ee6046fd47de321d1310dccacca92b.txt"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2021-0182"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:insecure-permissions"
+            },
+            {
+                "name": "malware-family:darkkomet"
+            },
+            {
+                "name": "malware-type:pe32"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:File and Directory Permissions Modification (T1222.001)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/d2ee6046fd47de321d1310dccacca92b.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "b5eb67e8-b485-4bcc-916d-a710759630a3",
+                "target_uuid": "71a43edf-a4c6-4b7b-bd48-f80120982313",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

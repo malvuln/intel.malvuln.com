@@ -1,0 +1,223 @@
+{
+    "Event": {
+        "uuid": "9e6f9ddc-f781-4a08-b32e-d58c208cb3eb",
+        "info": "Malware: agent (b83836d7...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 2,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Insecure Permissions",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "insecure permissions",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "agent",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2022-0464",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/b83836d7e6b0893e08d88a7850ca84ee.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/b83836d7e6b0893e08d88a7850ca84ee.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20220125031343/https://www.malvuln.com/advisory/b83836d7e6b0893e08d88a7850ca84ee.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "The malware writes a PE file with a \".sys\" extension to c:\\ drive, granting change (C) permissions to the authenticated user group.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "b83836d7e6b0893e08d88a7850ca84ee",
+                "to_ids": true
+            },
+            {
+                "type": "filename",
+                "category": "Payload delivery",
+                "value": "migbot.sys",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/b83836d7e6b0893e08d88a7850ca84ee.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "6bf89600-85ed-494e-837e-2eec6007dfff",
+                "description": "backdoor.win32.agent.uq sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "agent",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "pe32",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "file",
+                "meta-category": "artifact",
+                "uuid": "687ba5c2-ec91-4987-9e0f-a8718692046c",
+                "Attribute": [
+                    {
+                        "type": "filename",
+                        "category": "Payload delivery",
+                        "object_relation": "filename",
+                        "value": "migbot.sys",
+                        "to_ids": true
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "8a58be6d-1c66-4653-a164-39bc19817e59",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/b83836d7e6b0893e08d88a7850ca84ee.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "a88c93f0-7e81-405f-99dd-3974a6ac0fad",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2022-0464"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Insecure Permissions"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Insecure Permissions in backdoor.win32.agent.uq"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/b83836d7e6b0893e08d88a7850ca84ee.txt"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2022-0464"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:insecure-permissions"
+            },
+            {
+                "name": "malware-family:agent"
+            },
+            {
+                "name": "malware-type:pe32"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:File and Directory Permissions Modification (T1222.001)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/b83836d7e6b0893e08d88a7850ca84ee.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "a88c93f0-7e81-405f-99dd-3974a6ac0fad",
+                "target_uuid": "6bf89600-85ed-494e-837e-2eec6007dfff",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

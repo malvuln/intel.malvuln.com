@@ -1,0 +1,223 @@
+{
+    "Event": {
+        "uuid": "a8485428-e975-406f-952e-118253a98315",
+        "info": "Malware: cafeini (b24c56ab...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 3,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Denial Of Service",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "denial of service",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "cafeini",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2022-0525",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/b24c56abb4bde960c2d51d4e509d2c68.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/b24c56abb4bde960c2d51d4e509d2c68.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20220326020118/https://www.malvuln.com/advisory/b24c56abb4bde960c2d51d4e509d2c68.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "The malware listens on TCP port 51966 and is packed by a modified UPX implementation.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "b24c56abb4bde960c2d51d4e509d2c68",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "51966",
+                "comment": "Observed TCP port",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/b24c56abb4bde960c2d51d4e509d2c68.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "57b819a0-fff2-42a1-9361-03a176b2301f",
+                "description": "backdoor.win32.cafeini.b sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "cafeini",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "pe32",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "966b9e31-3d65-4b97-b4e9-081cdaf029d0",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/b24c56abb4bde960c2d51d4e509d2c68.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "1517b500-4303-4ee9-aa74-137e6c35fbb8",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2022-0525"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Denial of Service"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Denial of Service in backdoor.win32.cafeini.b"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/b24c56abb4bde960c2d51d4e509d2c68.txt"
+                    }
+                ]
+            },
+            {
+                "name": "network-activity",
+                "meta-category": "network",
+                "uuid": "30d4f11b-e0f1-4342-8bee-73672acbe722",
+                "Attribute": [
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "51966",
+                        "object_relation": "tcp"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2022-0525"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:denial-of-service"
+            },
+            {
+                "name": "malware-family:cafeini"
+            },
+            {
+                "name": "malware-type:pe32"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Endpoint Denial of Service (T1499)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/b24c56abb4bde960c2d51d4e509d2c68.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "1517b500-4303-4ee9-aa74-137e6c35fbb8",
+                "target_uuid": "57b819a0-fff2-42a1-9361-03a176b2301f",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

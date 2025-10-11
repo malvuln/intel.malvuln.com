@@ -1,0 +1,223 @@
+{
+    "Event": {
+        "uuid": "365a27e5-2982-4e70-b0ab-aff48c6addaa",
+        "info": "Malware: yoddos (bf2417bf...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 2,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Insecure Service Path",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "hijack execution flow",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "yoddos",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2021-0354",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/bf2417bf23a3b7ae2e44676882b4b9dd.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/bf2417bf23a3b7ae2e44676882b4b9dd.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20211005024716/https://www.malvuln.com/advisory/bf2417bf23a3b7ae2e44676882b4b9dd.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "The malware creates a service with an unquoted path.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "bf2417bf23a3b7ae2e44676882b4b9dd",
+                "to_ids": true
+            },
+            {
+                "type": "filename",
+                "category": "Payload delivery",
+                "value": "windowse.exe",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/bf2417bf23a3b7ae2e44676882b4b9dd.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "95766b67-8dd3-464a-ac36-49bac029a1b0",
+                "description": "backdoor.win32.yoddos.an sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "yoddos",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "pe32",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "file",
+                "meta-category": "artifact",
+                "uuid": "38dcc534-28c9-490a-8357-c00ff00e437c",
+                "Attribute": [
+                    {
+                        "type": "filename",
+                        "category": "Payload delivery",
+                        "object_relation": "filename",
+                        "value": "windowse.exe",
+                        "to_ids": true
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "d775cc01-4494-4627-8212-38ea32205cfa",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/bf2417bf23a3b7ae2e44676882b4b9dd.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "a381fb55-58ce-440e-bd55-bc7a1fb02a8e",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2021-0354"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Insecure Service Path"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Insecure Service Path in backdoor.win32.yoddos.an"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/bf2417bf23a3b7ae2e44676882b4b9dd.txt"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2021-0354"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:hijack-execution-flow"
+            },
+            {
+                "name": "malware-family:yoddos"
+            },
+            {
+                "name": "malware-type:pe32"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Hijack Execution Flow (T1574)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/bf2417bf23a3b7ae2e44676882b4b9dd.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "a381fb55-58ce-440e-bd55-bc7a1fb02a8e",
+                "target_uuid": "95766b67-8dd3-464a-ac36-49bac029a1b0",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

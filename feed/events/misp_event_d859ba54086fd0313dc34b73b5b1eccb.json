@@ -1,0 +1,203 @@
+{
+    "Event": {
+        "uuid": "5f477d27-017f-4174-8ae2-ab2b6649b9ae",
+        "info": "Malware: small (d859ba54...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 2,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Insecure Permissions",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "insecure permissions",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "small",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2022-0567",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/d859ba54086fd0313dc34b73b5b1eccb.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/d859ba54086fd0313dc34b73b5b1eccb.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20220427014049/https://www.malvuln.com/advisory/d859ba54086fd0313dc34b73b5b1eccb.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "the malware creates a directory with insecure permissions under c drive granting change (C) permissions to the authenticated user group.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "d859ba54086fd0313dc34b73b5b1eccb",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/d859ba54086fd0313dc34b73b5b1eccb.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "110b5975-04f6-46e4-912b-e83bfb6ed97d",
+                "description": "trojan-downloader.win32.small.ahlq sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "small",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "pe32",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "58751149-fd42-425d-a124-bbf355130c85",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/d859ba54086fd0313dc34b73b5b1eccb.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "534b91f6-1282-4dfb-973e-620567b53139",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2022-0567"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Insecure Permissions"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Insecure Permissions in trojan-downloader.win32.small.ahlq"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/d859ba54086fd0313dc34b73b5b1eccb.txt"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2022-0567"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:insecure-permissions"
+            },
+            {
+                "name": "malware-family:small"
+            },
+            {
+                "name": "malware-type:pe32"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:File and Directory Permissions Modification (T1222.001)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/d859ba54086fd0313dc34b73b5b1eccb.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "534b91f6-1282-4dfb-973e-620567b53139",
+                "target_uuid": "110b5975-04f6-46e4-912b-e83bfb6ed97d",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

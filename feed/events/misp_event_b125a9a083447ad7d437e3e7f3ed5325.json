@@ -1,0 +1,250 @@
+{
+    "Event": {
+        "uuid": "bbdfc948-7803-477f-9ad3-b53e35b44258",
+        "info": "Malware: wollf (b125a9a0...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 2,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Weak Hardcoded Password",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "insecure credential storage",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Extracted cleartext password from advisory",
+                "value": "alfaromeo",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "wollf",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2021-0435",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/b125a9a083447ad7d437e3e7f3ed5325.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/b125a9a083447ad7d437e3e7f3ed5325.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20211231171039/https://www.malvuln.com/advisory/b125a9a083447ad7d437e3e7f3ed5325.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "The malware listens on TCP port 55555 and runs with SYSTEM integrity.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "b125a9a083447ad7d437e3e7f3ed5325",
+                "to_ids": true
+            },
+            {
+                "type": "filename",
+                "category": "Payload delivery",
+                "value": "wrm.exe",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "55555",
+                "comment": "Observed TCP port",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/b125a9a083447ad7d437e3e7f3ed5325.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "888de804-11fb-4e82-b194-249637e6260e",
+                "description": "backdoor.win32.wollf.m sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "wollf",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "pe32",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "file",
+                "meta-category": "artifact",
+                "uuid": "95faa65a-2d2f-4aa6-886a-ad6256bc3d84",
+                "Attribute": [
+                    {
+                        "type": "filename",
+                        "category": "Payload delivery",
+                        "object_relation": "filename",
+                        "value": "wrm.exe",
+                        "to_ids": true
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "0000d9c3-31be-4c86-8faa-21c7121dc154",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/b125a9a083447ad7d437e3e7f3ed5325.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "8d3ec522-6e0b-4c8a-b49c-dc05f7e4e680",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2021-0435"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Weak Hardcoded Password"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Weak Hardcoded Password in backdoor.win32.wollf.m"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/b125a9a083447ad7d437e3e7f3ed5325.txt"
+                    }
+                ]
+            },
+            {
+                "name": "network-activity",
+                "meta-category": "network",
+                "uuid": "baa19e0b-b004-4d05-83d9-0671fad521ec",
+                "Attribute": [
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "55555",
+                        "object_relation": "tcp"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2021-0435"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:insecure-credential-storage"
+            },
+            {
+                "name": "malware-family:wollf"
+            },
+            {
+                "name": "malware-type:pe32"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Unsecured Credentials (T1552)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/b125a9a083447ad7d437e3e7f3ed5325.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "8d3ec522-6e0b-4c8a-b49c-dc05f7e4e680",
+                "target_uuid": "888de804-11fb-4e82-b194-249637e6260e",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

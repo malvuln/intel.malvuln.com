@@ -1,0 +1,283 @@
+{
+    "Event": {
+        "uuid": "c0a3407c-32ba-4adf-b302-f294ccf7d3a6",
+        "info": "Malware: poisonivy (b0748f1c...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 2,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Insecure Credential Storage",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "insecure credential storage",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "poisonivy",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2024-0688",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/b0748f1c1a17bad44dc9bd750fc97547.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/b0748f1c1a17bad44dc9bd750fc97547.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20240904013325/https://malvuln.com/advisory/b0748f1c1a17bad44dc9bd750fc97547.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "PoisonIvy listens on TCP port 3460 by default but that can be changed.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "b0748f1c1a17bad44dc9bd750fc97547",
+                "to_ids": true
+            },
+            {
+                "type": "filename",
+                "category": "Payload delivery",
+                "value": "pilib.dll",
+                "to_ids": true
+            },
+            {
+                "type": "filename",
+                "category": "Payload delivery",
+                "value": "poison ivy.ini",
+                "to_ids": true
+            },
+            {
+                "type": "filename",
+                "category": "Payload delivery",
+                "value": ".pip",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "3460",
+                "comment": "Observed TCP port",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/b0748f1c1a17bad44dc9bd750fc97547.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "1dabd339-2b8e-4880-9213-1c120738737b",
+                "description": "backdoor.win32.poisonivy.ymw sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "poisonivy",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "pe32",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "file",
+                "meta-category": "artifact",
+                "uuid": "956fd662-ed4c-4767-a1d6-729ae114a5ff",
+                "Attribute": [
+                    {
+                        "type": "filename",
+                        "category": "Payload delivery",
+                        "object_relation": "filename",
+                        "value": "pilib.dll",
+                        "to_ids": true
+                    }
+                ]
+            },
+            {
+                "name": "file",
+                "meta-category": "artifact",
+                "uuid": "6bd41cd3-3056-4b97-8797-60fffd9a49a7",
+                "Attribute": [
+                    {
+                        "type": "filename",
+                        "category": "Payload delivery",
+                        "object_relation": "filename",
+                        "value": "poison ivy.ini",
+                        "to_ids": true
+                    }
+                ]
+            },
+            {
+                "name": "file",
+                "meta-category": "artifact",
+                "uuid": "0aec802b-b1c4-438d-954d-be4d6a105f7c",
+                "Attribute": [
+                    {
+                        "type": "filename",
+                        "category": "Payload delivery",
+                        "object_relation": "filename",
+                        "value": ".pip",
+                        "to_ids": true
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "92eec9d9-4db2-4444-a016-6ef0b55b7b81",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/b0748f1c1a17bad44dc9bd750fc97547.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "dacc0075-7db6-41f8-b0da-de1abd0de6bd",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2024-0688"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Insecure Credential Storage"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Insecure Credential Storage in backdoor.win32.poisonivy.ymw"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/b0748f1c1a17bad44dc9bd750fc97547.txt"
+                    }
+                ]
+            },
+            {
+                "name": "network-activity",
+                "meta-category": "network",
+                "uuid": "85fb51a0-b729-4f79-a42d-415a0146bf87",
+                "Attribute": [
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "3460",
+                        "object_relation": "tcp"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2024-0688"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:insecure-credential-storage"
+            },
+            {
+                "name": "malware-family:poisonivy"
+            },
+            {
+                "name": "malware-type:pe32"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Unsecured Credentials (T1552)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/b0748f1c1a17bad44dc9bd750fc97547.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "dacc0075-7db6-41f8-b0da-de1abd0de6bd",
+                "target_uuid": "1dabd339-2b8e-4880-9213-1c120738737b",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

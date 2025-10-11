@@ -1,0 +1,243 @@
+{
+    "Event": {
+        "uuid": "d33bcef1-80db-45c1-a1b4-30c5106283e0",
+        "info": "Malware: subseven (bc7f4c46...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 1,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Remote Stack Buffer Overflow",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "remote buffer overflow",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "subseven",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2022-0448",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/bc7f4c4689f1b8ad395404d1e75c776f.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/bc7f4c4689f1b8ad395404d1e75c776f.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20220106031349/https://www.malvuln.com/advisory/bc7f4c4689f1b8ad395404d1e75c776f.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "The malware listens on TCP port 1111.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "bc7f4c4689f1b8ad395404d1e75c776f",
+                "to_ids": true
+            },
+            {
+                "type": "filename",
+                "category": "Payload delivery",
+                "value": "(cfvfpgnf.exe) randomly named",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "1111",
+                "comment": "Observed TCP port",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/bc7f4c4689f1b8ad395404d1e75c776f.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "9a1dd00c-2bb9-458b-b540-c4c5a0e85f9f",
+                "description": "backdoor.win32.subseven.c sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "subseven",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "pe32",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "file",
+                "meta-category": "artifact",
+                "uuid": "2ce8f30d-0d9c-4b55-b51a-0841e9a23d18",
+                "Attribute": [
+                    {
+                        "type": "filename",
+                        "category": "Payload delivery",
+                        "object_relation": "filename",
+                        "value": "(cfvfpgnf.exe) randomly named",
+                        "to_ids": true
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "c7cc6ee0-6c9a-49ef-8cf7-392af021df83",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/bc7f4c4689f1b8ad395404d1e75c776f.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "79d1fb88-b5b0-42ae-af1a-113ab851cd0b",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2022-0448"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Remote Stack Buffer Overflow"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Remote Stack Buffer Overflow in backdoor.win32.subseven.c"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/bc7f4c4689f1b8ad395404d1e75c776f.txt"
+                    }
+                ]
+            },
+            {
+                "name": "network-activity",
+                "meta-category": "network",
+                "uuid": "08b7822c-dc10-4a36-9154-b2409ea45587",
+                "Attribute": [
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "1111",
+                        "object_relation": "tcp"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2022-0448"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:remote-buffer-overflow"
+            },
+            {
+                "name": "malware-family:subseven"
+            },
+            {
+                "name": "malware-type:pe32"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Exploit Public-Facing Application (T1190)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/bc7f4c4689f1b8ad395404d1e75c776f.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "79d1fb88-b5b0-42ae-af1a-113ab851cd0b",
+                "target_uuid": "9a1dd00c-2bb9-458b-b540-c4c5a0e85f9f",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

@@ -1,0 +1,223 @@
+{
+    "Event": {
+        "uuid": "d120584b-ca89-4447-834a-7b2eef27d610",
+        "info": "Malware: skrat (d724feed...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 3,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Cleartext Hardcoded Password",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "insecure credential storage",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "skrat",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2021-0437",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/d724feed69ec7b624e4e178ad6579cfb.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/d724feed69ec7b624e4e178ad6579cfb.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20211231171338/https://www.malvuln.com/advisory/d724feed69ec7b624e4e178ad6579cfb.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "SKD RAT malware has feature to build backdoor servers, when setting a password for remote access the malware hardcodes the password in cleartext within the...",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "d724feed69ec7b624e4e178ad6579cfb",
+                "to_ids": true
+            },
+            {
+                "type": "filename",
+                "category": "Payload delivery",
+                "value": "server.exe",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/d724feed69ec7b624e4e178ad6579cfb.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "a77526ba-cf66-4c0d-86d6-c01d80e67c63",
+                "description": "backdoor.win32.skrat sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "skrat",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "pe32",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "file",
+                "meta-category": "artifact",
+                "uuid": "2d653f19-94c2-4126-bf0b-be3d139ae7fb",
+                "Attribute": [
+                    {
+                        "type": "filename",
+                        "category": "Payload delivery",
+                        "object_relation": "filename",
+                        "value": "server.exe",
+                        "to_ids": true
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "034d2eff-e492-49e2-9898-0f87441920fd",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/d724feed69ec7b624e4e178ad6579cfb.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "b484babc-7103-46f1-9c3c-644916e85b5c",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2021-0437"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Cleartext Hardcoded Password"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Cleartext Hardcoded Password in backdoor.win32.skrat"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/d724feed69ec7b624e4e178ad6579cfb.txt"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2021-0437"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:insecure-credential-storage"
+            },
+            {
+                "name": "malware-family:skrat"
+            },
+            {
+                "name": "malware-type:pe32"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Unsecured Credentials (T1552)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/d724feed69ec7b624e4e178ad6579cfb.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "b484babc-7103-46f1-9c3c-644916e85b5c",
+                "target_uuid": "a77526ba-cf66-4c0d-86d6-c01d80e67c63",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

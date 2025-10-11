@@ -1,0 +1,223 @@
+{
+    "Event": {
+        "uuid": "011c433b-37bf-4e28-bbcb-cd61b08c1793",
+        "info": "Malware: hades (d1d082cb...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 1,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Remote Persistent Xss",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "remote persistent xss",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "hades",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2022-0514",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/c4cc1317aea42f7dd4a1b786c5278a24_C.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/c4cc1317aea42f7dd4a1b786c5278a24_C.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20220313061743/https://www.malvuln.com/advisory/c4cc1317aea42f7dd4a1b786c5278a24_C.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "The Hades Rat web-panel listens on Port 80, it takes three HTTP Post parameters to write bot commands.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "d1d082cbb2a394c8974e734e2ad9f226",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "80",
+                "comment": "Observed TCP port",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/c4cc1317aea42f7dd4a1b786c5278a24_C.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "fb7b409f-0121-4f72-8ede-0e59699b98bb",
+                "description": "hades rat - web panel sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "hades",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "webui",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "430c4bb3-857b-4a21-af84-38390081364b",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/c4cc1317aea42f7dd4a1b786c5278a24_C.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "b663d5aa-785d-4b03-9bf5-2cb384a57e11",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2022-0514"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Remote Persistent XSS"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Remote Persistent XSS in hades rat - web panel"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/c4cc1317aea42f7dd4a1b786c5278a24_C.txt"
+                    }
+                ]
+            },
+            {
+                "name": "network-activity",
+                "meta-category": "network",
+                "uuid": "6e9dd319-8fa0-402f-93c8-c4a3d4b515d3",
+                "Attribute": [
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "80",
+                        "object_relation": "tcp"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2022-0514"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:remote-persistent-xss"
+            },
+            {
+                "name": "malware-family:hades"
+            },
+            {
+                "name": "malware-type:webui"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Command and Scripting Interpreter (T1059)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/c4cc1317aea42f7dd4a1b786c5278a24_C.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "b663d5aa-785d-4b03-9bf5-2cb384a57e11",
+                "target_uuid": "fb7b409f-0121-4f72-8ede-0e59699b98bb",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

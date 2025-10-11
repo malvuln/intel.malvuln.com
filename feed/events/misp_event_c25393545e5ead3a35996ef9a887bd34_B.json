@@ -1,0 +1,223 @@
+{
+    "Event": {
+        "uuid": "5d76df8c-fbe2-43a4-a219-fee8fe474463",
+        "info": "Malware: kwak (c2539354...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 1,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Authentication Bypass",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "authentication bypass",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "kwak",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2021-0147",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/c25393545e5ead3a35996ef9a887bd34_B.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/c25393545e5ead3a35996ef9a887bd34_B.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20210326035823/https://www.malvuln.com/advisory/c25393545e5ead3a35996ef9a887bd34_B.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "The backdoor runs an FTP server that listens on TCP port 37885.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "c25393545e5ead3a35996ef9a887bd34",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "37885",
+                "comment": "Observed TCP port",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/c25393545e5ead3a35996ef9a887bd34_B.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "a09cfbb0-7c7b-464d-8d20-677cb72c0728",
+                "description": "backdoor.win32.kwak.12 sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "kwak",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "pe32",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "9b3475a2-0359-455b-88a8-92181df090c8",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/c25393545e5ead3a35996ef9a887bd34_B.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "bbced034-8e6c-47c6-8db9-052115ee047d",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2021-0147"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Authentication Bypass"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Authentication Bypass in backdoor.win32.kwak.12"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/c25393545e5ead3a35996ef9a887bd34_B.txt"
+                    }
+                ]
+            },
+            {
+                "name": "network-activity",
+                "meta-category": "network",
+                "uuid": "8c3ccc02-e664-4370-ab42-9d02bfc2e21a",
+                "Attribute": [
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "37885",
+                        "object_relation": "tcp"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2021-0147"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:authentication-bypass"
+            },
+            {
+                "name": "malware-family:kwak"
+            },
+            {
+                "name": "malware-type:pe32"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Valid Accounts (T1078)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/c25393545e5ead3a35996ef9a887bd34_B.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "bbced034-8e6c-47c6-8db9-052115ee047d",
+                "target_uuid": "a09cfbb0-7c7b-464d-8d20-677cb72c0728",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

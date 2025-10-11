@@ -1,0 +1,236 @@
+{
+    "Event": {
+        "uuid": "3f25bb09-bb19-4460-aa8d-c1569056f184",
+        "info": "Malware: kwak (c2539354...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 2,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Port Bounce Scan",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "active scanning",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "kwak",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2021-0148",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/c25393545e5ead3a35996ef9a887bd34_D.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/c25393545e5ead3a35996ef9a887bd34_D.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20210326035904/https://www.malvuln.com/advisory/c25393545e5ead3a35996ef9a887bd34_D.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "The backdoor runs an FTP server that listens on TCP port 37885.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "c25393545e5ead3a35996ef9a887bd34",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "37885",
+                "comment": "Observed TCP port",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "80",
+                "comment": "Observed TCP port",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/c25393545e5ead3a35996ef9a887bd34_D.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "cd2eb9ea-bc8a-4ca3-aa38-3950fc05c173",
+                "description": "backdoor.win32.kwak.12 sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "kwak",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "pe32",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "75327062-f3af-4a7f-a664-a6a40640669e",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/c25393545e5ead3a35996ef9a887bd34_D.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "7fdd5a49-02d4-464b-b18e-90058321eb95",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2021-0148"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Port Bounce Scan"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Port Bounce Scan in backdoor.win32.kwak.12"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/c25393545e5ead3a35996ef9a887bd34_D.txt"
+                    }
+                ]
+            },
+            {
+                "name": "network-activity",
+                "meta-category": "network",
+                "uuid": "4da25749-aa1f-4ca5-b37c-9bbdd87ab78a",
+                "Attribute": [
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "37885",
+                        "object_relation": "tcp"
+                    },
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "80",
+                        "object_relation": "tcp"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2021-0148"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:active-scanning"
+            },
+            {
+                "name": "malware-family:kwak"
+            },
+            {
+                "name": "malware-type:pe32"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Active Scanning (T1595)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/c25393545e5ead3a35996ef9a887bd34_D.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "7fdd5a49-02d4-464b-b18e-90058321eb95",
+                "target_uuid": "cd2eb9ea-bc8a-4ca3-aa38-3950fc05c173",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

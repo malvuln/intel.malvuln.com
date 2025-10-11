@@ -1,0 +1,223 @@
+{
+    "Event": {
+        "uuid": "456a2fa9-865e-4d35-9f6d-acca114311d3",
+        "info": "Malware: symbab (bffc519f...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 1,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Heap Corruption",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "heap buffer overflow",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "symbab",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2022-0610",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/bffc519fbaf2d119bd307cd22368cdc7.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/bffc519fbaf2d119bd307cd22368cdc7.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20220607020244/https://www.malvuln.com/advisory/bffc519fbaf2d119bd307cd22368cdc7.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "The malware listens on TCP port 8080.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "bffc519fbaf2d119bd307cd22368cdc7",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "8080",
+                "comment": "Observed TCP port",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/bffc519fbaf2d119bd307cd22368cdc7.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "3341a4f3-662b-4351-81e5-7bd39ab26625",
+                "description": "trojan-proxy.win32.symbab.o sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "symbab",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "pe32",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "d28b07f3-2973-4775-b473-e8614e0ec065",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/bffc519fbaf2d119bd307cd22368cdc7.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "5dec9b2f-71bf-4587-89ba-02887cdfcadd",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2022-0610"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Heap Corruption"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Heap Corruption in trojan-proxy.win32.symbab.o"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/bffc519fbaf2d119bd307cd22368cdc7.txt"
+                    }
+                ]
+            },
+            {
+                "name": "network-activity",
+                "meta-category": "network",
+                "uuid": "9f63b006-e984-4be1-aaf0-3a57518c2edb",
+                "Attribute": [
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "8080",
+                        "object_relation": "tcp"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2022-0610"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:heap-buffer-overflow"
+            },
+            {
+                "name": "malware-family:symbab"
+            },
+            {
+                "name": "malware-type:pe32"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Exploit Public-Facing Application (T1190)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/bffc519fbaf2d119bd307cd22368cdc7.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "5dec9b2f-71bf-4587-89ba-02887cdfcadd",
+                "target_uuid": "3341a4f3-662b-4351-81e5-7bd39ab26625",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

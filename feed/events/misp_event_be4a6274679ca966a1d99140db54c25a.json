@@ -1,0 +1,236 @@
+{
+    "Event": {
+        "uuid": "691cf22d-c178-411f-8215-968424636cf5",
+        "info": "Malware: delf (be4a6274...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 1,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Unauthenticated Remote Command Execution",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "remote command execution",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "delf",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2021-0217",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/be4a6274679ca966a1d99140db54c25a.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/be4a6274679ca966a1d99140db54c25a.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20210518015958/https://www.malvuln.com/advisory/be4a6274679ca966a1d99140db54c25a.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "The malware listens on several TCP ports and accepts unauthenticated commands on port 53187 and 53184.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "be4a6274679ca966a1d99140db54c25a",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "53184",
+                "comment": "Observed TCP port",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "53187",
+                "comment": "Observed TCP port",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/be4a6274679ca966a1d99140db54c25a.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "023e3a21-5a58-44bd-8763-a9fabd305c74",
+                "description": "backdoor.win32.delf.aez sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "delf",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "pe32",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "45d18f3c-e285-45df-9629-3523f99d865b",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/be4a6274679ca966a1d99140db54c25a.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "c51a376b-afb5-4179-b8aa-9cd227be59e9",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2021-0217"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Unauthenticated Remote Command Execution"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Unauthenticated Remote Command Execution in backdoor.win32.delf.aez"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/be4a6274679ca966a1d99140db54c25a.txt"
+                    }
+                ]
+            },
+            {
+                "name": "network-activity",
+                "meta-category": "network",
+                "uuid": "fe024af8-14ef-46ca-94bf-cd88f0f929d4",
+                "Attribute": [
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "53184",
+                        "object_relation": "tcp"
+                    },
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "53187",
+                        "object_relation": "tcp"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2021-0217"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:remote-command-execution"
+            },
+            {
+                "name": "malware-family:delf"
+            },
+            {
+                "name": "malware-type:pe32"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Exploit Public-Facing Application (T1190)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/be4a6274679ca966a1d99140db54c25a.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "c51a376b-afb5-4179-b8aa-9cd227be59e9",
+                "target_uuid": "023e3a21-5a58-44bd-8763-a9fabd305c74",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

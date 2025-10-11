@@ -1,0 +1,223 @@
+{
+    "Event": {
+        "uuid": "52ee34e8-9c39-4a11-b485-4a4796aa2177",
+        "info": "Malware: agent (bc2ccf92...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 2,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Information Disclosure",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "information disclosure",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "agent",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2022-0654",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/bc2ccf92bea475f828dcdcb1c8f6cc92.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/bc2ccf92bea475f828dcdcb1c8f6cc92.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20221110011147/https://www.malvuln.com/advisory/bc2ccf92bea475f828dcdcb1c8f6cc92.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "the malware runs an HTTP service on port 19334.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "bc2ccf92bea475f828dcdcb1c8f6cc92",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "19334",
+                "comment": "Observed TCP port",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/bc2ccf92bea475f828dcdcb1c8f6cc92.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "b19a5565-c53b-4469-a065-c55d61de4ada",
+                "description": "heur:trojan.msil.agent.gen sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "agent",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "pe64",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "40623649-62df-40e3-ae24-4d194a66d3c1",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/bc2ccf92bea475f828dcdcb1c8f6cc92.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "c15adf01-482c-4a4e-80f4-0e6fec6c895f",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2022-0654"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Information Disclosure"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Information Disclosure in heur:trojan.msil.agent.gen"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/bc2ccf92bea475f828dcdcb1c8f6cc92.txt"
+                    }
+                ]
+            },
+            {
+                "name": "network-activity",
+                "meta-category": "network",
+                "uuid": "d40a48d6-a741-4b1e-b9dd-388bdbff208c",
+                "Attribute": [
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "19334",
+                        "object_relation": "tcp"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2022-0654"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:information-disclosure"
+            },
+            {
+                "name": "malware-family:agent"
+            },
+            {
+                "name": "malware-type:pe64"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Gather Victim Identity Information (T1592)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/bc2ccf92bea475f828dcdcb1c8f6cc92.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "c15adf01-482c-4a4e-80f4-0e6fec6c895f",
+                "target_uuid": "b19a5565-c53b-4469-a065-c55d61de4ada",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

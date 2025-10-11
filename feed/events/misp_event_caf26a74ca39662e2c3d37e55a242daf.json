@@ -1,0 +1,236 @@
+{
+    "Event": {
+        "uuid": "8dc8a981-78ef-492b-b209-d212c3f523bb",
+        "info": "Malware: zetronic (caf26a74...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 3,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Remote Dos",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "denial of service",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "zetronic",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2021-0057",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/caf26a74ca39662e2c3d37e55a242daf.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/caf26a74ca39662e2c3d37e55a242daf.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20210129005929/https://www.malvuln.com/advisory/caf26a74ca39662e2c3d37e55a242daf.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "Zetronic listens on UDP port 2090, sending a large datagram packet of junk results in denial of service of the backdoor.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "caf26a74ca39662e2c3d37e55a242daf",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "2090",
+                "comment": "Observed TCP port",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "2090",
+                "comment": "Observed UDP port",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/caf26a74ca39662e2c3d37e55a242daf.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "39500dcd-7b21-4ef5-b10a-07973bb110d1",
+                "description": "backdoor.win32.zetronic sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "zetronic",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "pe32",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "02e66f2b-f51e-4264-9158-07e13d5fc594",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/caf26a74ca39662e2c3d37e55a242daf.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "adb4330c-d516-4d48-8694-956f2b7dfad0",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2021-0057"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Remote DoS"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Remote DoS in backdoor.win32.zetronic"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/caf26a74ca39662e2c3d37e55a242daf.txt"
+                    }
+                ]
+            },
+            {
+                "name": "network-activity",
+                "meta-category": "network",
+                "uuid": "78ce48ee-ab4b-4ec7-be9b-46e4252a4712",
+                "Attribute": [
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "2090",
+                        "object_relation": "tcp"
+                    },
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "2090",
+                        "object_relation": "udp"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2021-0057"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:denial-of-service"
+            },
+            {
+                "name": "malware-family:zetronic"
+            },
+            {
+                "name": "malware-type:pe32"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Endpoint Denial of Service (T1499)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/caf26a74ca39662e2c3d37e55a242daf.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "adb4330c-d516-4d48-8694-956f2b7dfad0",
+                "target_uuid": "39500dcd-7b21-4ef5-b10a-07973bb110d1",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

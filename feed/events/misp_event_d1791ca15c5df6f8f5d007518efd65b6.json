@@ -1,0 +1,289 @@
+{
+    "Event": {
+        "uuid": "94c729e1-0d33-42a5-a8e7-62d0e048aeb1",
+        "info": "Malware: xspyout (d1791ca1...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 2,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Unauthenticated Open Proxy",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "unauthenticated open proxy",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "xspyout",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2021-0268",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/d1791ca15c5df6f8f5d007518efd65b6.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/d1791ca15c5df6f8f5d007518efd65b6.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20210703215316/https://www.malvuln.com/advisory/d1791ca15c5df6f8f5d007518efd65b6.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "The malware listens on TCP port 14100.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "d1791ca15c5df6f8f5d007518efd65b6",
+                "to_ids": true
+            },
+            {
+                "type": "filename",
+                "category": "Payload delivery",
+                "value": "lsass32.exe",
+                "to_ids": true
+            },
+            {
+                "type": "filename",
+                "category": "Payload delivery",
+                "value": "lol.dll",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "110",
+                "comment": "Observed TCP port",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "14100",
+                "comment": "Observed TCP port",
+                "to_ids": true
+            },
+            {
+                "type": "port",
+                "category": "Network activity",
+                "value": "21",
+                "comment": "Observed TCP port",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/d1791ca15c5df6f8f5d007518efd65b6.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "52effb22-c019-4e05-b7fa-6765c0b15317",
+                "description": "trojan-spy.win32.xspyout.a sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "xspyout",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "pe32",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "file",
+                "meta-category": "artifact",
+                "uuid": "9bdf13de-6edf-4031-aba9-051bc3a006d8",
+                "Attribute": [
+                    {
+                        "type": "filename",
+                        "category": "Payload delivery",
+                        "object_relation": "filename",
+                        "value": "lsass32.exe",
+                        "to_ids": true
+                    }
+                ]
+            },
+            {
+                "name": "file",
+                "meta-category": "artifact",
+                "uuid": "e917c6dc-90b9-475f-88b0-60bb9a5baa7a",
+                "Attribute": [
+                    {
+                        "type": "filename",
+                        "category": "Payload delivery",
+                        "object_relation": "filename",
+                        "value": "lol.dll",
+                        "to_ids": true
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "e0fd965d-1cb8-402e-9c95-c588b5653290",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/d1791ca15c5df6f8f5d007518efd65b6.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "79bcf31f-effa-40ba-9907-92c4be99e196",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2021-0268"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Unauthenticated Open Proxy"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Unauthenticated Open Proxy in trojan-spy.win32.xspyout.a"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/d1791ca15c5df6f8f5d007518efd65b6.txt"
+                    }
+                ]
+            },
+            {
+                "name": "network-activity",
+                "meta-category": "network",
+                "uuid": "c33760ce-21e3-4767-96ce-226a881b3e17",
+                "Attribute": [
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "110",
+                        "object_relation": "tcp"
+                    },
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "14100",
+                        "object_relation": "tcp"
+                    },
+                    {
+                        "type": "port",
+                        "category": "Network activity",
+                        "value": "21",
+                        "object_relation": "tcp"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2021-0268"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:unauthenticated-open-proxy"
+            },
+            {
+                "name": "malware-family:xspyout"
+            },
+            {
+                "name": "malware-type:pe32"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Proxy (T1090)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/d1791ca15c5df6f8f5d007518efd65b6.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "79bcf31f-effa-40ba-9907-92c4be99e196",
+                "target_uuid": "52effb22-c019-4e05-b7fa-6765c0b15317",
+                "relation": "related-to"
+            }
+        ]
+    }
+}
