@@ -1,0 +1,203 @@
+{
+    "Event": {
+        "uuid": "46b9ca3f-7e9b-44ec-8e24-62b326eef04b",
+        "info": "Malware: collectorstealerbuilder (8c003105...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 3,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Man-In-The-Middle (Mitm)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "man in the middle",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "collectorstealerbuilder",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2022-0459",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/54530f88c8e4f4371c9418f00c256b1d_B.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/54530f88c8e4f4371c9418f00c256b1d_B.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20220120034605/https://www.malvuln.com/advisory/54530f88c8e4f4371c9418f00c256b1d_B.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "MITM vector exists as the CURL request used when sending data to \"api.telegram.org/bot\" has CURLOPT_SSL_VERIFYPEER set to false.",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "8c003105229554557c75ec836b4fcf79",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/54530f88c8e4f4371c9418f00c256b1d_B.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "ae104e51-9ad9-4598-880b-e77db92e22b8",
+                "description": "collectorstealerbuilder v2.0.0 panel sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "collectorstealerbuilder",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "webui",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "accfd92c-9e71-4d2b-8293-963085219c10",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/54530f88c8e4f4371c9418f00c256b1d_B.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "e83ad572-32be-44e5-8da1-a38fad59f1b1",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2022-0459"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Man-in-the-Middle (MITM)"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Man-in-the-Middle (MITM) in collectorstealerbuilder v2.0.0 panel"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/54530f88c8e4f4371c9418f00c256b1d_B.txt"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2022-0459"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:man-in-the-middle"
+            },
+            {
+                "name": "malware-family:collectorstealerbuilder"
+            },
+            {
+                "name": "malware-type:webui"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Adversary-in-the-Middle (T1557)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/54530f88c8e4f4371c9418f00c256b1d_B.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "e83ad572-32be-44e5-8da1-a38fad59f1b1",
+                "target_uuid": "ae104e51-9ad9-4598-880b-e77db92e22b8",
+                "relation": "related-to"
+            }
+        ]
+    }
+}

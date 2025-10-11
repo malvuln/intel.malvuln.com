@@ -1,0 +1,203 @@
+{
+    "Event": {
+        "uuid": "0ea7fbbf-be38-43c4-9d53-bb571af75cc3",
+        "info": "Malware: cosanostra (de5d209f...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 2,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Cross Site Request Forgery (Csrf)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "cross site request forgery",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "cosanostra",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2022-0473",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/61285c988de52b7c067fb2e703f2ab83_C.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/61285c988de52b7c067fb2e703f2ab83_C.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20220125023505/https://www.malvuln.com/advisory/61285c988de52b7c067fb2e703f2ab83_C.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Other",
+                "value": "The Panel does not provide a CSRF security token to verify and process only authorized HTTP POST requests for \"tasks.php\".",
+                "comment": "Short summary",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "de5d209faa9dfbcd1d5e551273ae9c06",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/61285c988de52b7c067fb2e703f2ab83_C.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "d3ab9498-c0a1-450e-80aa-e8a9058e65ad",
+                "description": "cosanostra builder webpanel sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "cosanostra",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "webui",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "4875b0ef-44c7-4835-ae2e-2568cdb8d8f2",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/61285c988de52b7c067fb2e703f2ab83_C.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "13103ccf-4457-4a05-a528-2e1e9e3476d6",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2022-0473"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Cross Site Request Forgery (CSRF)"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Cross Site Request Forgery (CSRF) in cosanostra builder webpanel"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/61285c988de52b7c067fb2e703f2ab83_C.txt"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2022-0473"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:cross-site-request-forgery"
+            },
+            {
+                "name": "malware-family:cosanostra"
+            },
+            {
+                "name": "malware-type:webui"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Drive-by Compromise (T1189)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/61285c988de52b7c067fb2e703f2ab83_C.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "13103ccf-4457-4a05-a528-2e1e9e3476d6",
+                "target_uuid": "d3ab9498-c0a1-450e-80aa-e8a9058e65ad",
+                "relation": "related-to"
+            }
+        ]
+    }
+}
