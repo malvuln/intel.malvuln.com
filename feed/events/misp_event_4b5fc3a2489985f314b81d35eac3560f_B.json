@@ -1,0 +1,196 @@
+{
+    "Event": {
+        "uuid": "bb9bcd9f-2fcb-48cf-a9c6-d1966400226a",
+        "info": "Malware: smokeloader (4b5fc3a2...) - Malvuln Advisories",
+        "distribution": 3,
+        "threat_level_id": 1,
+        "analysis": 2,
+        "date": "2025-10-08",
+        "Attribute": [
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Vulnerability",
+                "value": "Cross Site Request Forgery (Csrf) - Persistent Xss",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Normalized vuln title (canonical name)",
+                "value": "cross site request forgery",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Payload delivery",
+                "comment": "Malware Family",
+                "value": "smokeloader",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "Attribution",
+                "comment": "Researcher / Author",
+                "value": "hyp3rlinx",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Malware Vulnerability ID (MVID)",
+                "value": "MVID-2024-0682",
+                "to_ids": false
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Source advisory URL: https://malvuln.com/advisory/4b5fc3a2489985f314b81d35eac3560f_B.txt",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/4b5fc3a2489985f314b81d35eac3560f_B.txt",
+                "comment": "Original source advisory",
+                "to_ids": false
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://web.archive.org/web/20240511221543/https://malvuln.com/advisory/4b5fc3a2489985f314b81d35eac3560f_B.txt",
+                "comment": "Archived advisory (Wayback Machine)",
+                "to_ids": false
+            },
+            {
+                "type": "text",
+                "category": "External analysis",
+                "comment": "Feed origin",
+                "value": "intel.malvuln.com",
+                "to_ids": false
+            },
+            {
+                "type": "md5",
+                "category": "Payload delivery",
+                "value": "4b5fc3a2489985f314b81d35eac3560f",
+                "to_ids": true
+            },
+            {
+                "type": "comment",
+                "category": "External analysis",
+                "value": "Original research: Malvuln \u2014 John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+                "to_ids": false,
+                "comment": "Attribution"
+            },
+            {
+                "type": "link",
+                "category": "External analysis",
+                "value": "https://malvuln.com/advisory/4b5fc3a2489985f314b81d35eac3560f_B.txt",
+                "comment": "Original advisory",
+                "to_ids": false
+            }
+        ],
+        "Object": [
+            {
+                "name": "malware",
+                "meta-category": "payload-delivery",
+                "uuid": "a1659e2a-495e-4248-ad06-8a1026759978",
+                "description": "panel.smokeloader sample",
+                "Attribute": [
+                    {
+                        "type": "text",
+                        "object_relation": "malware-family",
+                        "value": "smokeloader",
+                        "to_ids": false
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "file-type",
+                        "value": "web panel",
+                        "to_ids": false
+                    }
+                ]
+            },
+            {
+                "name": "link",
+                "meta-category": "external-reference",
+                "uuid": "21e19ec0-1ee9-48a7-a5d5-27b86024d145",
+                "Attribute": [
+                    {
+                        "type": "link",
+                        "object_relation": "url",
+                        "value": "https://malvuln.com/advisory/4b5fc3a2489985f314b81d35eac3560f_B.txt"
+                    }
+                ]
+            },
+            {
+                "name": "vulnerability",
+                "meta-category": "vulnerability",
+                "uuid": "24ffc8e8-2802-4ad4-a095-a3dcbdf187c9",
+                "Attribute": [
+                    {
+                        "type": "vulnerability",
+                        "object_relation": "id",
+                        "value": "MVID-2024-0682"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "summary",
+                        "value": "Cross Site Request Forgery (CSRF) - Persistent XSS"
+                    },
+                    {
+                        "type": "text",
+                        "object_relation": "description",
+                        "value": "Cross Site Request Forgery (CSRF) - Persistent XSS in panel.smokeloader"
+                    },
+                    {
+                        "type": "link",
+                        "object_relation": "references",
+                        "value": "https://malvuln.com/advisory/4b5fc3a2489985f314b81d35eac3560f_B.txt"
+                    }
+                ]
+            }
+        ],
+        "Tag": [
+            {
+                "name": "analysis-type:external"
+            },
+            {
+                "name": "malvuln-id:mvid-2024-0682"
+            },
+            {
+                "name": "malvuln-intel-source:malvuln"
+            },
+            {
+                "name": "malvuln-vulnerability:cross-site-request-forgery"
+            },
+            {
+                "name": "malware-family:smokeloader"
+            },
+            {
+                "name": "malware-type:web panel"
+            },
+            {
+                "name": "tlp:clear"
+            },
+            {
+                "name": "tlp:white"
+            },
+            {
+                "name": "malvuln-author:hyp3rlinx"
+            },
+            {
+                "name": "attack-pattern:Drive-by Compromise (T1189)"
+            }
+        ],
+        "comment": "Source advisory URL: https://malvuln.com/advisory/4b5fc3a2489985f314b81d35eac3560f_B.txt",
+        "analysis-type": "external",
+        "ObjectReference": [
+            {
+                "source_uuid": "24ffc8e8-2802-4ad4-a095-a3dcbdf187c9",
+                "target_uuid": "a1659e2a-495e-4248-ad06-8a1026759978",
+                "relation": "related-to"
+            }
+        ]
+    }
+}
