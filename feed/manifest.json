@@ -1,6 +1,6 @@
 [
   {
-    "filename": "events/events/misp_event_00199eb3fd1a0aa6771b7f12fad895a0.json",
+    "filename": "events/misp_event_00199eb3fd1a0aa6771b7f12fad895a0.json",
     "uuid": "aeb51e3b-09d9-4f8d-b2b1-2e7091c22bb4",
     "info": "Malware: darkkomet (00199eb3...) - Malvuln Advisories",
     "date": "2025-10-08",
@@ -6999,4 +6999,5 @@
     "attribute_count": 13,
     "md5": "f653f58ad9ff9ad6ebc6cc06074f0fb6"
   }
+
 ]
