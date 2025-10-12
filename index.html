@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <title>Malvuln Intel – Malware Vulnerability Threat Intelligence Feed</title>
   <link rel="canonical" href="https://intel.malvuln.com/">
+  <title>Malvuln Intelligence Feed (MISP-Compatible)</title>
+  <meta name="description" content="Browse or integrate Malvuln’s MISP-compatible threat intelligence feed, including malware vulnerability data, authors, and families.">
+
   <meta name="theme-color" content="#000000">
   <meta name="description" content="Malvuln Intel provides a unique malware vulnerability threat intelligence feed. Discover security flaws in malware, C2 web panels, worms, and viruses for research and defense.">
   <link rel="manifest" href="/site.webmanifest">
@@ -63,8 +66,28 @@
   }
 </style>
 </head>
-<body>
-  <h4>Malvuln Vulnerability Threat Intelligence Feed</h4>
+
+<body style="font-family: sans-serif; margin: 2em; line-height: 1.6;">
+  <h1>Malvuln Intelligence Feed</h1>
+  <p>
+    The <strong>Malvuln Intelligence Feed</strong> provides MISP-compatible threat intelligence data derived from
+    malware vulnerability research published on <a href="https://malvuln.com">Malvuln.com</a>.
+  </p>
+
+  <h2>Available Data</h2>
+  <ul>
+    <li><a href="feed/manifest.json">Main Feed Manifest</a></li>
+    <li><a href="feed/events/manifest.json">Events</a></li>
+    <li><a href="feed/galaxies/manifest.json">Galaxies</a></li>
+    <li><a href="feed/clusters/manifest.json">Clusters</a></li>
+  </ul>
+
+  <p>All feeds are served in <code>application/json</code> format and can be integrated directly into MISP.</p>
+
+  <footer style="margin-top: 2em; font-size: 0.9em; color: #666;">
+    &copy; 2025 Malvuln — Research by hyp3rlinx |
+    <a href="https://malvuln.com">Return to Malvuln.com</a>
+  </footer>
 </body>
 </html>
 
