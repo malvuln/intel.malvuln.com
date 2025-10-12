@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Malvuln Created By",
+    "type": "malvuln-author",
+    "namespace": "malvuln-author",
+    "version": "1.0",
+    "uuid": "371090f3-c6f2-48db-a53a-f7d80693447f",
+    "filename": "feed/galaxies/malvuln-author.json"
+  },
+  {
+    "name": "Malvuln Vulnerability Types",
+    "type": "malvuln-vulnerability",
+    "namespace": "malvuln-vulnerability",
+    "version": "1.0",
+    "uuid": "54dfab63-e57d-4743-b7cd-1b9b52149bb3",
+    "filename": "feed/galaxies/malvuln-vulnerability.json"
+  },
+  {
+    "name": "Malvuln ID",
+    "type": "malvuln-id",
+    "namespace": "malvuln-id",
+    "version": "1.0",
+    "uuid": "a1b23c45-d678-9ef0-1234-abcdef123456",
+    "filename": "feed/galaxies/malvuln-id.json"
+  },
+  {
+    "name": "Malware Families",
+    "type": "malware-family",
+    "namespace": "malware-family",
+    "version": "1.0",
+    "uuid": "b9d3a03e-5f2f-47d2-bf8d-9212abf2cd7b",
+    "filename": "feed/galaxies/malware-family.json"
+  }
+]
