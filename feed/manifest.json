@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "description": "Malvuln MISP Threat Intelligence Feed",
+  "feeds": {
+    "events": "feed/events/manifest.json",
+    "galaxies": "feed/galaxies/manifest.json",
+    "clusters": "feed/clusters/manifest.json"
+  }
+}
