@@ -1,0 +1,23 @@
+{
+  "namespace": "malvuln-id",
+  "name": "Malvuln Vulnerability IDs (MVID)",
+  "description": "Unique Malvuln IDs (MVID) assigned to malware vulnerability advisories.",
+  "type": "malvuln-id",
+  "uuid": "c59d6685-ad36-4161-a05f-1428442a2d78",
+  "source": "https://malvuln.com",
+  "Org": {
+    "name": "malvuln",
+    "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01",
+    "local": true
+  },
+  "Orgc": {
+    "name": "malvuln",
+    "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01",
+    "local": true
+  },
+  "meta": {
+    "contact": "malvuln13@gmail.com",
+    "domain": "intel.malvuln.com"
+  },
+  "clusters": []
+}
