@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Malvuln Vulnerability Types",
+    "type": "malvuln-vulnerability",
+    "uuid": "54dfab63-e57d-4743-b7cd-1b9b52149bb3",
+    "version": "1.0",
+    "filename": "feed/clusters/malvuln-vulnerability.json"
+  },
+  {
+    "name": "Malvuln Author",
+    "type": "malvuln-author",
+    "uuid": "371090f3-c6f2-48db-a53a-f7d80693447f",
+    "version": "1.0",
+    "filename": "feed/clusters/malvuln-author.json"
+  },
+  {
+    "name": "Malvuln ID",
+    "type": "malvuln-id",
+    "uuid": "a1b23c45-d678-9ef0-1234-abcdef123456",
+    "version": "1.0",
+    "filename": "feed/clusters/malvuln-id.json"
+  },
+  {
+    "name": "Malware Families",
+    "type": "malware-family",
+    "uuid": "b9d3a03e-5f2f-47d2-bf8d-9212abf2cd7b",
+    "version": "1.0",
+    "filename": "feed/clusters/malware-family.json"
+  }
+]
