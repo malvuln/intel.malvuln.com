@@ -7,7 +7,7 @@
     "filename": "feed/clusters/malvuln-vulnerability.json"
   },
   {
-    "name": "Malvuln Author",
+    "name": "Malvuln Created By",
     "type": "malvuln-author",
     "uuid": "371090f3-c6f2-48db-a53a-f7d80693447f",
     "version": "1.0",
