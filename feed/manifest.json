@@ -4,6 +4,7 @@
   "feeds": {
     "events": "feed/events/manifest.json",
     "galaxies": "feed/galaxies/manifest.json",
-    "clusters": "feed/clusters/manifest.json"
+    "clusters": "feed/clusters/manifest.json",
+    "tags": "feed/tags/tags.json"
   }
 }
