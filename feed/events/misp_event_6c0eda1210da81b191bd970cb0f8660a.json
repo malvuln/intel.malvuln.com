@@ -1,0 +1,856 @@
+{
+  "Event": {
+    "id": "3180",
+    "orgc_id": "2",
+    "org_id": "2",
+    "date": "2025-12-22",
+    "threat_level_id": "2",
+    "info": "Malware: controltotal (6c0eda12...) - Malvuln Advisories",
+    "published": true,
+    "uuid": "b14b763a-63dd-4233-aebd-8e4b4f27ede6",
+    "attribute_count": "14",
+    "analysis": "2",
+    "timestamp": "1766379531",
+    "distribution": "3",
+    "proposal_email_lock": false,
+    "locked": false,
+    "publish_timestamp": "1766380024",
+    "sharing_group_id": "0",
+    "disable_correlation": false,
+    "extends_uuid": "",
+    "protected": null,
+    "event_creator_email": "malvuln13@gmail.com",
+    "Org": {
+      "id": "2",
+      "name": "malvuln",
+      "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01",
+      "local": true
+    },
+    "Orgc": {
+      "id": "2",
+      "name": "malvuln",
+      "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01",
+      "local": true
+    },
+    "Attribute": [
+      {
+        "id": "327722",
+        "type": "text",
+        "category": "External analysis",
+        "to_ids": false,
+        "uuid": "a918b250-d03e-4d62-9193-6a3978cdf9fa",
+        "event_id": "3180",
+        "distribution": "5",
+        "timestamp": "1766379531",
+        "comment": "Vulnerability",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "first_seen": null,
+        "last_seen": null,
+        "value": "Insecure Credential Storage",
+        "Galaxy": [],
+        "ShadowAttribute": []
+      },
+      {
+        "id": "327723",
+        "type": "text",
+        "category": "External analysis",
+        "to_ids": false,
+        "uuid": "917cf406-222c-4348-85f3-2d4b7eb108b5",
+        "event_id": "3180",
+        "distribution": "5",
+        "timestamp": "1766379531",
+        "comment": "Normalized vuln title (canonical name)",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "first_seen": null,
+        "last_seen": null,
+        "value": "insecure credential storage",
+        "Galaxy": [],
+        "ShadowAttribute": []
+      },
+      {
+        "id": "327724",
+        "type": "text",
+        "category": "External analysis",
+        "to_ids": false,
+        "uuid": "3393ae79-4c7f-4ad7-9a6c-706ecb27d138",
+        "event_id": "3180",
+        "distribution": "5",
+        "timestamp": "1766379531",
+        "comment": "Extracted cleartext password from advisory",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "first_seen": null,
+        "last_seen": null,
+        "value": "jdf4df4vdf",
+        "Galaxy": [],
+        "ShadowAttribute": []
+      },
+      {
+        "id": "327725",
+        "type": "text",
+        "category": "Payload delivery",
+        "to_ids": false,
+        "uuid": "6d0d1143-cac1-44ba-aa50-fe375a395987",
+        "event_id": "3180",
+        "distribution": "5",
+        "timestamp": "1766379531",
+        "comment": "Malware Family",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "first_seen": null,
+        "last_seen": null,
+        "value": "controltotal",
+        "Galaxy": [],
+        "ShadowAttribute": []
+      },
+      {
+        "id": "327726",
+        "type": "text",
+        "category": "Attribution",
+        "to_ids": false,
+        "uuid": "276a8e94-1448-4ab2-9a12-5ecdc71cf3e3",
+        "event_id": "3180",
+        "distribution": "5",
+        "timestamp": "1766379531",
+        "comment": "Researcher / Author",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "first_seen": null,
+        "last_seen": null,
+        "value": "hyp3rlinx",
+        "Galaxy": [],
+        "ShadowAttribute": []
+      },
+      {
+        "id": "327727",
+        "type": "text",
+        "category": "External analysis",
+        "to_ids": false,
+        "uuid": "9a214daa-51c0-4e36-b487-4feb4795b682",
+        "event_id": "3180",
+        "distribution": "5",
+        "timestamp": "1766379531",
+        "comment": "Malware Vulnerability ID (MVID)",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "first_seen": null,
+        "last_seen": null,
+        "value": "MVID-2025-0702",
+        "Galaxy": [],
+        "ShadowAttribute": []
+      },
+      {
+        "id": "327728",
+        "type": "comment",
+        "category": "External analysis",
+        "to_ids": false,
+        "uuid": "ede6f512-52ff-422d-b7c8-cdad7b18dd0f",
+        "event_id": "3180",
+        "distribution": "5",
+        "timestamp": "1766379531",
+        "comment": "",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "first_seen": null,
+        "last_seen": null,
+        "value": "Source advisory URL: https://malvuln.com/advisory/6c0eda1210da81b191bd970cb0f8660a.txt",
+        "Galaxy": [],
+        "ShadowAttribute": []
+      },
+      {
+        "id": "327729",
+        "type": "link",
+        "category": "External analysis",
+        "to_ids": false,
+        "uuid": "4fb25da2-30ef-4689-85ac-31509d15578f",
+        "event_id": "3180",
+        "distribution": "5",
+        "timestamp": "1766379531",
+        "comment": "Original source advisory",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "first_seen": null,
+        "last_seen": null,
+        "value": "https://malvuln.com/advisory/6c0eda1210da81b191bd970cb0f8660a.txt",
+        "Galaxy": [],
+        "ShadowAttribute": []
+      },
+      {
+        "id": "327730",
+        "type": "link",
+        "category": "External analysis",
+        "to_ids": false,
+        "uuid": "8560b47f-b4e6-4982-8818-6e5fd58ff206",
+        "event_id": "3180",
+        "distribution": "5",
+        "timestamp": "1766379531",
+        "comment": "Archived advisory (Wayback Machine)",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "first_seen": null,
+        "last_seen": null,
+        "value": "https://web.archive.org/web/20251222022037/https://malvuln.com/advisory/6c0eda1210da81b191bd970cb0f8660a.txt",
+        "Galaxy": [],
+        "ShadowAttribute": []
+      },
+      {
+        "id": "327731",
+        "type": "text",
+        "category": "Other",
+        "to_ids": false,
+        "uuid": "325b9a08-bcec-4b27-b323-f3e72eadb1a2",
+        "event_id": "3180",
+        "distribution": "5",
+        "timestamp": "1766379531",
+        "comment": "Short summary",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "first_seen": null,
+        "last_seen": null,
+        "value": "The malware listens on TCP port 2032 and requires authentication.",
+        "Galaxy": [],
+        "ShadowAttribute": []
+      },
+      {
+        "id": "327732",
+        "type": "text",
+        "category": "External analysis",
+        "to_ids": false,
+        "uuid": "35f2365c-b110-4c24-89bc-b52f87a55eb3",
+        "event_id": "3180",
+        "distribution": "5",
+        "timestamp": "1766379531",
+        "comment": "Feed origin",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "first_seen": null,
+        "last_seen": null,
+        "value": "intel.malvuln.com",
+        "Galaxy": [],
+        "ShadowAttribute": []
+      },
+      {
+        "id": "327733",
+        "type": "md5",
+        "category": "Payload delivery",
+        "to_ids": true,
+        "uuid": "81e01c3a-2cbf-4769-b4c7-c71bbc710f53",
+        "event_id": "3180",
+        "distribution": "5",
+        "timestamp": "1766379531",
+        "comment": "",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "first_seen": null,
+        "last_seen": null,
+        "value": "6c0eda1210da81b191bd970cb0f8660a",
+        "Galaxy": [],
+        "ShadowAttribute": []
+      },
+      {
+        "id": "327734",
+        "type": "port",
+        "category": "Network activity",
+        "to_ids": true,
+        "uuid": "008caab9-501b-4a48-a4d5-338b4ddf56f6",
+        "event_id": "3180",
+        "distribution": "5",
+        "timestamp": "1766379531",
+        "comment": "Observed TCP port",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "first_seen": null,
+        "last_seen": null,
+        "value": "2032",
+        "Galaxy": [],
+        "ShadowAttribute": []
+      },
+      {
+        "id": "327735",
+        "type": "comment",
+        "category": "External analysis",
+        "to_ids": false,
+        "uuid": "0fff30c5-2a22-4adf-b27f-d7b40b3a76a3",
+        "event_id": "3180",
+        "distribution": "5",
+        "timestamp": "1766379531",
+        "comment": "Attribution",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "first_seen": null,
+        "last_seen": null,
+        "value": "Original research: Malvuln — John Page (aka hyp3rlinx), https://malvuln.com (Malware Vulnerability Threat Intelligence).",
+        "Galaxy": [],
+        "ShadowAttribute": []
+      }
+    ],
+    "ShadowAttribute": [],
+    "RelatedEvent": [
+      {
+        "Event": {
+          "id": "3181",
+          "date": "2025-12-22",
+          "threat_level_id": "1",
+          "info": "Malware: poison (b2e50fa3...) - Malvuln Advisories",
+          "published": true,
+          "uuid": "0fadc179-e958-4ac5-89a1-be3d68a295cb",
+          "analysis": "2",
+          "timestamp": "1766379531",
+          "distribution": "3",
+          "org_id": "2",
+          "orgc_id": "2",
+          "Org": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          },
+          "Orgc": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          }
+        }
+      },
+      {
+        "Event": {
+          "id": "2821",
+          "date": "2025-09-27",
+          "threat_level_id": "2",
+          "info": "Malware: torctphprat (43d146da...) - Malvuln Advisories",
+          "published": true,
+          "uuid": "6d091e00-b8c4-484d-bb64-57df362dd4a1",
+          "analysis": "2",
+          "timestamp": "1758948085",
+          "distribution": "3",
+          "org_id": "2",
+          "orgc_id": "2",
+          "Org": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          },
+          "Orgc": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          }
+        }
+      },
+      {
+        "Event": {
+          "id": "2832",
+          "date": "2025-09-27",
+          "threat_level_id": "2",
+          "info": "Malware: guptachar (857999d2...) - Malvuln Advisories",
+          "published": true,
+          "uuid": "23cbb055-8cbe-42cf-a895-41a1015b8308",
+          "analysis": "2",
+          "timestamp": "1758948091",
+          "distribution": "3",
+          "org_id": "2",
+          "orgc_id": "2",
+          "Org": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          },
+          "Orgc": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          }
+        }
+      },
+      {
+        "Event": {
+          "id": "2582",
+          "date": "2025-09-27",
+          "threat_level_id": "2",
+          "info": "Malware: freezer (2992129c...) - Malvuln Advisories",
+          "published": true,
+          "uuid": "76fc109f-f8f9-407d-ad5a-4dfe523bfb36",
+          "analysis": "2",
+          "timestamp": "1758947950",
+          "distribution": "3",
+          "org_id": "2",
+          "orgc_id": "2",
+          "Org": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          },
+          "Orgc": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          }
+        }
+      },
+      {
+        "Event": {
+          "id": "3101",
+          "date": "2025-09-27",
+          "threat_level_id": "2",
+          "info": "Malware: ptakks (e087725b...) - Malvuln Advisories",
+          "published": true,
+          "uuid": "cf99b285-81ff-4948-b2c8-ae8ce2097c99",
+          "analysis": "2",
+          "timestamp": "1758948242",
+          "distribution": "3",
+          "org_id": "2",
+          "orgc_id": "2",
+          "Org": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          },
+          "Orgc": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          }
+        }
+      },
+      {
+        "Event": {
+          "id": "2880",
+          "date": "2025-09-27",
+          "threat_level_id": "2",
+          "info": "Malware: delf (92f7f949...) - Malvuln Advisories",
+          "published": true,
+          "uuid": "e8fe6ba9-de83-453f-916c-2221844ea8d1",
+          "analysis": "2",
+          "timestamp": "1758948117",
+          "distribution": "3",
+          "org_id": "2",
+          "orgc_id": "2",
+          "Org": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          },
+          "Orgc": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          }
+        }
+      },
+      {
+        "Event": {
+          "id": "3150",
+          "date": "2025-09-27",
+          "threat_level_id": "2",
+          "info": "Malware: corty (f72138e5...) - Malvuln Advisories",
+          "published": true,
+          "uuid": "2fe257e9-2e54-43f9-abf1-78b296b99723",
+          "analysis": "2",
+          "timestamp": "1758948270",
+          "distribution": "3",
+          "org_id": "2",
+          "orgc_id": "2",
+          "Org": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          },
+          "Orgc": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          }
+        }
+      },
+      {
+        "Event": {
+          "id": "2900",
+          "date": "2025-09-27",
+          "threat_level_id": "2",
+          "info": "Malware: delf (9acdbfc9...) - Malvuln Advisories",
+          "published": true,
+          "uuid": "4845c3b8-b264-4451-becc-534c5cfe6464",
+          "analysis": "2",
+          "timestamp": "1758948128",
+          "distribution": "3",
+          "org_id": "2",
+          "orgc_id": "2",
+          "Org": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          },
+          "Orgc": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          }
+        }
+      },
+      {
+        "Event": {
+          "id": "2684",
+          "date": "2025-09-27",
+          "threat_level_id": "2",
+          "info": "Malware: collectorstealerbuilder (8c003105...) - Malvuln Advisories",
+          "published": true,
+          "uuid": "697ba57a-35ba-4df4-b987-39fbd75b7829",
+          "analysis": "2",
+          "timestamp": "1758948008",
+          "distribution": "3",
+          "org_id": "2",
+          "orgc_id": "2",
+          "Org": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          },
+          "Orgc": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          }
+        }
+      },
+      {
+        "Event": {
+          "id": "2958",
+          "date": "2025-09-27",
+          "threat_level_id": "2",
+          "info": "Malware: pandora (ae4a409d...) - Malvuln Advisories",
+          "published": true,
+          "uuid": "0c33e766-69be-4ca1-96cd-198097b2744d",
+          "analysis": "2",
+          "timestamp": "1758948161",
+          "distribution": "3",
+          "org_id": "2",
+          "orgc_id": "2",
+          "Org": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          },
+          "Orgc": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          }
+        }
+      },
+      {
+        "Event": {
+          "id": "2706",
+          "date": "2025-09-27",
+          "threat_level_id": "2",
+          "info": "Malware: jtram (596882df...) - Malvuln Advisories",
+          "published": true,
+          "uuid": "cca073c2-44a9-4e64-8d51-e9405440089e",
+          "analysis": "2",
+          "timestamp": "1758948021",
+          "distribution": "3",
+          "org_id": "2",
+          "orgc_id": "2",
+          "Org": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          },
+          "Orgc": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          }
+        }
+      },
+      {
+        "Event": {
+          "id": "2971",
+          "date": "2025-09-27",
+          "threat_level_id": "2",
+          "info": "Malware: poisonivy (b0748f1c...) - Malvuln Advisories",
+          "published": true,
+          "uuid": "bf22e777-0f9c-432d-a0ed-dad3b6dda7b6",
+          "analysis": "2",
+          "timestamp": "1758948168",
+          "distribution": "3",
+          "org_id": "2",
+          "orgc_id": "2",
+          "Org": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          },
+          "Orgc": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          }
+        }
+      },
+      {
+        "Event": {
+          "id": "3021",
+          "date": "2025-09-27",
+          "threat_level_id": "2",
+          "info": "Malware: hades (a117b7fa...) - Malvuln Advisories",
+          "published": true,
+          "uuid": "f2a394e7-7a1a-40e6-b158-5be96e5091be",
+          "analysis": "2",
+          "timestamp": "1758948197",
+          "distribution": "3",
+          "org_id": "2",
+          "orgc_id": "2",
+          "Org": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          },
+          "Orgc": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          }
+        }
+      },
+      {
+        "Event": {
+          "id": "3049",
+          "date": "2025-09-27",
+          "threat_level_id": "2",
+          "info": "Malware: orcus (cc3670f1...) - Malvuln Advisories",
+          "published": true,
+          "uuid": "0d2584e6-e1a2-4751-ad2b-2613a0f87cc7",
+          "analysis": "2",
+          "timestamp": "1758948213",
+          "distribution": "3",
+          "org_id": "2",
+          "orgc_id": "2",
+          "Org": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          },
+          "Orgc": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          }
+        }
+      },
+      {
+        "Event": {
+          "id": "3062",
+          "date": "2025-09-27",
+          "threat_level_id": "2",
+          "info": "Malware: agent (d2b933eb...) - Malvuln Advisories",
+          "published": true,
+          "uuid": "69002be0-0a43-4a10-a370-336686446a87",
+          "analysis": "2",
+          "timestamp": "1758948220",
+          "distribution": "3",
+          "org_id": "2",
+          "orgc_id": "2",
+          "Org": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          },
+          "Orgc": {
+            "id": "2",
+            "name": "malvuln",
+            "uuid": "03e4f2c0-4b9d-4e30-99a4-772974954c01"
+          }
+        }
+      }
+    ],
+    "Galaxy": [],
+    "Object": [],
+    "EventReport": [],
+    "CryptographicKey": [],
+    "Tag": [
+      {
+        "id": "3350",
+        "name": "analysis-type:external",
+        "colour": "#54d0d8",
+        "exportable": true,
+        "user_id": "0",
+        "hide_tag": false,
+        "numerical_value": null,
+        "is_galaxy": false,
+        "is_custom_galaxy": false,
+        "local_only": false,
+        "local": false,
+        "relationship_type": null
+      },
+      {
+        "id": "3351",
+        "name": "malvuln-id:mvid-2025-0702",
+        "colour": "#de0165",
+        "exportable": true,
+        "user_id": "0",
+        "hide_tag": false,
+        "numerical_value": null,
+        "is_galaxy": false,
+        "is_custom_galaxy": false,
+        "local_only": false,
+        "local": false,
+        "relationship_type": null
+      },
+      {
+        "id": "3352",
+        "name": "malvuln-intel-source:malvuln",
+        "colour": "#96c4b7",
+        "exportable": true,
+        "user_id": "0",
+        "hide_tag": false,
+        "numerical_value": null,
+        "is_galaxy": false,
+        "is_custom_galaxy": false,
+        "local_only": false,
+        "local": false,
+        "relationship_type": null
+      },
+      {
+        "id": "3353",
+        "name": "malvuln-vulnerability:insecure-credential-storage",
+        "colour": "#1daa9e",
+        "exportable": true,
+        "user_id": "0",
+        "hide_tag": false,
+        "numerical_value": null,
+        "is_galaxy": false,
+        "is_custom_galaxy": false,
+        "local_only": false,
+        "local": false,
+        "relationship_type": null
+      },
+      {
+        "id": "3354",
+        "name": "malware-family:controltotal",
+        "colour": "#d53422",
+        "exportable": true,
+        "user_id": "0",
+        "hide_tag": false,
+        "numerical_value": null,
+        "is_galaxy": false,
+        "is_custom_galaxy": false,
+        "local_only": false,
+        "local": false,
+        "relationship_type": null
+      },
+      {
+        "id": "8",
+        "name": "malware-type:pe32",
+        "colour": "#8a493b",
+        "exportable": true,
+        "user_id": "0",
+        "hide_tag": false,
+        "numerical_value": null,
+        "is_galaxy": false,
+        "is_custom_galaxy": false,
+        "local_only": false,
+        "local": false,
+        "relationship_type": null
+      },
+      {
+        "id": "631",
+        "name": "tlp:clear",
+        "colour": "#ffffff",
+        "exportable": true,
+        "user_id": "0",
+        "hide_tag": false,
+        "numerical_value": null,
+        "is_galaxy": false,
+        "is_custom_galaxy": false,
+        "local_only": false,
+        "local": false,
+        "relationship_type": null
+      },
+      {
+        "id": "26",
+        "name": "tlp:white",
+        "colour": "#ffffff",
+        "exportable": true,
+        "user_id": "0",
+        "hide_tag": false,
+        "numerical_value": null,
+        "is_galaxy": false,
+        "is_custom_galaxy": false,
+        "local_only": false,
+        "local": false,
+        "relationship_type": null
+      },
+      {
+        "id": "3355",
+        "name": "malvuln-author:hyp3rlinx",
+        "colour": "#7501ac",
+        "exportable": true,
+        "user_id": "0",
+        "hide_tag": false,
+        "numerical_value": null,
+        "is_galaxy": false,
+        "is_custom_galaxy": false,
+        "local_only": false,
+        "local": false,
+        "relationship_type": null
+      },
+      {
+        "id": "2256",
+        "name": "attack-pattern:Unsecured Credentials (T1552)",
+        "colour": "#94f144",
+        "exportable": true,
+        "user_id": "0",
+        "hide_tag": false,
+        "numerical_value": null,
+        "is_galaxy": false,
+        "is_custom_galaxy": false,
+        "local_only": false,
+        "local": false,
+        "relationship_type": null
+      }
+    ]
+  }
+}
