@@ -6998,5 +6998,26 @@
     "threat_level_id": 2,
     "attribute_count": 13,
     "md5": "f653f58ad9ff9ad6ebc6cc06074f0fb6"
-  }
+  },
+  {
+  "filename": "feed/events/misp_event_6c0eda1210da81b191bd970cb0f8660a.json",
+  "uuid": "b14b763a-63dd-4233-aebd-8e4b4f27ede6",
+  "info": "Malware: controltotal (6c0eda12...) - Malvuln Advisories",
+  "date": "2025-12-22",
+  "distribution": 3,
+  "threat_level_id": 2,
+  "attribute_count": 14,
+  "md5": "f5569f30332ab6d15648fcf78701b863"
+},
+  {
+  "filename": "feed/events/misp_event_b2e50fa38510a5ea8e11f614b1c1d0d5.json",
+  "uuid": "0fadc179-e958-4ac5-89a1-be3d68a295cb",
+  "info": "Malware: poison (b2e50fa3...) - Malvuln Advisories",
+  "date": "2025-12-22",
+  "distribution": 3,
+  "threat_level_id": 1,
+  "attribute_count": 12,
+  "md5": "0994b5904399f9a0b08f256dec77b844"
+}
+
 ]
